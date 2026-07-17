@@ -19,7 +19,8 @@ view = int(input("\nEnter the number of the movie you want to view: "))
 if 1 <=view <=len(movies):
     print(f"You selected: {movies[view-1]}")
 else:
-    print("Please enter a valid number.")
+    print("Invalid selection")
+    
 
 
 
