@@ -16,10 +16,10 @@ print("Last movie: ", movies[-1])
     
 view = int(input("\nEnter the number of the movie you want to view: "))
 
-if view <=len(movies):
+if 1 <=view <=len(movies):
     print(f"You selected: {movies[view-1]}")
 else:
-    print("invalid selection")
+    print("Please enter a valid number.")
 
 
 
