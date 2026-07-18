@@ -5,6 +5,6 @@ student = {"Name": "Janelle S. Pahati",
             "School": "Bulacan State University",
             "Campus": "Hagonoy"}
 
-for key,values in student.items():
-    print(f"{key.title()}: {values}")
+for key,value in student.items():
+    print(f"{key.title()}: {value}")
     

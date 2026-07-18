@@ -1,16 +1,13 @@
-studInfo = {"name": "Janelle",
-            "age": 19,
-            "course": "bsit",
-            "school": "bulsu",
-            "year": "3"}
+studInfo = {"Name": "Janelle",
+            "Age": 19,
+            "Course": "bsit",
+            "School": "bulsu",
+            "Year": "3"}
 
 def display():
-    print("Student Information:")
-    print("Name: ", studInfo.get("name", "N/A"))
-    print("Age: ", studInfo.get("age", "N/A"))
-    print("Course: ", studInfo.get("course", "N/A"))
-    print("Year: ", studInfo.get("year", "N/A"))
-    print("School: ", studInfo.get("school", "N/A"))
+    print("\nStudent Information: ")
+    for key,value in studInfo.items():
+        print(f"{key.title()}: {value}")
     
 display()
 
@@ -22,6 +19,7 @@ if remove is None:
     print("Information does not exist.")
 else:
     print("\nThe information you deleted is: ", remove)
+    print("\n")
     display()
         
 
