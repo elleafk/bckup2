@@ -14,7 +14,7 @@ def selection():
     if 1 <= selected <= len(zodiacs):
         print("\nYou selected: ", zodiacs[selected-1])
     else:
-        print("Invalid zodiac number")
+        print("Invalid number")
 
 selection()
 

@@ -10,14 +10,14 @@ print("\nFood Collection: ")
 for food in foods:
     print(food)
     
-remove = input("\nEnter a food to remove: ")
-foods.discard(remove)
-add = input("Enter a food to add: ")
-foods.add(add)
+removeFood = input("\nEnter a food to remove: ")
+foods.discard(removeFood)
+addFood = input("Enter a food to add: ")
+foods.add(addFood)
 
 print("\nTotal unique numbers of food: ", len(foods))
-print("Final Collections of food: ")
-for finalfood in foods:
-    print(finalfood)
+print("\nFinal Collections of food: ")
+for food in foods:
+    print(food)
 
 

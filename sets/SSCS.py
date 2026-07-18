@@ -23,31 +23,31 @@ for s2 in student2:
     print(s2)
     
 print("\nCollection of Subjects:")
-collection = student1 | student2
-for union in collection:
-    print(union)
+allSubjects = student1 | student2
+for subject in allSubjects:
+    print(subject)
     
 print("\nCommon Subjects: ")
 common = student1 & student2
-for intersection in common:
-    print(intersection)
+for subject in common:
+    print(subject)
     
 print("\nOnly student 1 likes: ")
 different1 = student1 - student2
-for difference1 in different1:
-    print(difference1)
+for subject in different1:
+    print(subject)
     
 print("\nOnly student 2 likes: ")
 different2 = student2 - student1
-for difference2 in different2:
-    print(difference2)
+for subject in different2:
+    print(subject)
     
 print("\nSubjects they dont have in common: ")
 unique = student1 ^ student2
-for uniquesub in unique:
-    print(uniquesub)
+for subject in unique:
+    print(subject)
     
-print("\nTotal unique subjects: ", len(collection))
+print("\nTotal unique subjects: ", len(allSubjects))
 print("Student 1 unique subjects: ", len(student1))
 print("Student 2 unique subjects: ", len(student2))
 
