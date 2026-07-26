@@ -15,10 +15,10 @@ for i in range(n):
 x = np.array(x)
 y = np.array(y)
 
-model = LinearRegression
+model = LinearRegression()
 model.fit(x, y)
 
 new_hours = float(input("Enter your study hours to predict exam score: "))
-prediction = model.predict([new_hours])
+prediction = model.predict([[new_hours]])
 
-print("\nYour exam score will be: ", prediction)
+print("\nYour exam score will be: ", prediction[0])
